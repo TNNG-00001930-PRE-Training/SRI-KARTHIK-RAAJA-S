@@ -1,20 +1,19 @@
+# HelloWorldTest.py
 import unittest
 from src.main.lab import Lab
 
+
 class HelloWorldTest(unittest.TestCase):
     def setUp(self):
-        try:
-            self.hw = Lab()
-        except Exception as e:
-            self.fail(f"Failed to initialize Lab: {e}")
+        self.hw = Lab()
 
     def test_hello(self):
         """
-        Method sayHello() must return "Hello, World!". This test ignores whitespace differences.
+        Method sayHello() must return "Hello, World!". The strip method will remove any extra spaces or newlines at the end.
         """
         expected = "Hello, World!"
-        actual = self.hw.sayHello()
-        self.assertEqual(expected, actual, "Strings are not equal")
+        actual = self.hw.sayHello().strip()
+        self.assertEqual(expected, actual)
 
 if __name__ == '__main__':
     unittest.main()
