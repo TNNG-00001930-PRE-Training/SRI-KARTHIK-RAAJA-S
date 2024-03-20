@@ -8,7 +8,7 @@ def demonstrate_integer():
     An integer is a whole number without any decimal points.
     """
 
-    my_integer = None  # Assign any integer value to 'my_integer'
+    my_integer = 10  # Assign any integer value to 'my_integer'
     return my_integer
 
 
@@ -20,7 +20,7 @@ def demonstrate_float():
     A float is a number that has both an integer and fractional part, separated by a decimal point.
     """
 
-    my_float = None  # Assign any floating-point value to 'my_float'
+    my_float = 10.01  # Assign any floating-point value to 'my_float'
     return my_float
 
 
@@ -32,7 +32,7 @@ def demonstrate_boolean():
     A boolean represents one of two values: True or False.
     """
 
-    my_boolean = None  # Assign either True or False to 'my_boolean'
+    my_boolean = False  # Assign either True or False to 'my_boolean'
     return my_boolean
 
 def demonstrate_string():
@@ -44,7 +44,7 @@ def demonstrate_string():
     """
 
     # Assign a string value to the variable
-    my_string = None
+    my_string = "Hello World"
     return my_string
 
 def demonstrate_tuple():
@@ -61,7 +61,7 @@ def demonstrate_tuple():
     element3 = 3
 
     # Create the tuple
-    my_tuple = None
+    my_tuple = (element1, element2, element3)
     
     return my_tuple
 
@@ -82,7 +82,7 @@ def demonstrate_create_areas_list():
     bed = 40
     bath = 15
 
-    areas = None
+    areas = [hall, kit, liv, bed, bath]
     
     return areas
 
@@ -100,7 +100,7 @@ def demonstrate_set():
     element3 = 'c'
 
     # Create the set
-    my_set = None
+    my_set = {element1, element2, element3}
     
     return my_set
 
@@ -122,7 +122,7 @@ def demonstrate_dictionary():
     value2 = 'value2'
 
     # Create the dictionary
-    my_dict = None
+    my_dict = {key1:value1, key2 : value2}
     
     return my_dict
 
@@ -172,10 +172,10 @@ def demonstrate_variable_scope():
         # Local variable declaration within function1
         local_var1 = "I am local to function1"
         
-        print("Inside function1 - global_var:", global_var)
+        print("Inside function1 - local_var1:", local_var1) 
         
 
     function1()  # Call function1 to demonstrate variable scope
-    print("Inside function1 - local_var1:", local_var1)  
+    
     print("Outside function1 - global_var:", global_var)
     return None
